@@ -1,0 +1,15 @@
+Change Component Footprint: Designator=C24 Old Footprint=0402_C New Footprint=0201
+Change Component Footprint: Designator=C25 Old Footprint=0402_C New Footprint=0201
+Change Component Footprint: Designator=C26 Old Footprint=0402_C New Footprint=0201
+Change Component Footprint: Designator=C27 Old Footprint=0402_C New Footprint=0201
+Change Component Footprint: Designator=C28 Old Footprint=0402_C New Footprint=0201
+Change Component Footprint: Designator=C29 Old Footprint=0402_C New Footprint=0201
+Change Component Footprint: Designator=C30 Old Footprint=0402_C New Footprint=0201
+Change Component Footprint: Designator=C31 Old Footprint=0402_C New Footprint=0201
+Change Component Footprint: Designator=C32 Old Footprint=0402_C New Footprint=0201
+Change Component Footprint: Designator=C33 Old Footprint=0402_C New Footprint=0201
+Change Component Comment : Designator=C24 Old Comment=10uF New Comment=1uF
+Change Component Comment : Designator=C26 Old Comment=10uF New Comment=1uF
+Change Component Comment : Designator=C27 Old Comment=10uF New Comment=1uF
+Change Component Comment : Designator=C29 Old Comment=10uF New Comment=1uF
+Change Component Comment : Designator=C31 Old Comment=10uF New Comment=1uF

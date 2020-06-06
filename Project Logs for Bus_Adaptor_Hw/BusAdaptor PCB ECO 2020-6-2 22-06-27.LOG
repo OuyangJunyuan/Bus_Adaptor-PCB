@@ -1,0 +1,5 @@
+Added Component: Designator=XT3(OSC 3225-4P)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=P3 Pin=U7-1
+Added Pin To Net: NetName=NetC50_2 Pin=XT3-1
+Added Pin To Net: NetName=NetC51_2 Pin=XT3-3

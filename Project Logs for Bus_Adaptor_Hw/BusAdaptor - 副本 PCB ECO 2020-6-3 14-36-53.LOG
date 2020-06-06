@@ -1,0 +1,12 @@
+Change component parameters: Designator = "D18"; Footprint = "SOD-123FL"; UniqueID = "\AFZUCTRG"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "供应商链接"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.szlcsc.com/product/details_2841.html"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SMA(DO-214AC)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "LC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SuppliersPartNumber"; Value = "C95872"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "备注"; Value = "1N4007 4007 编号C2464 已经停售, 使用新物料编号C95872"; VariantName = "[No Variations]"
+Added Component: Designator=C50(0402_C)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=C50-1
+Added Pin To Net: NetName=NetC50_2 Pin=C50-2

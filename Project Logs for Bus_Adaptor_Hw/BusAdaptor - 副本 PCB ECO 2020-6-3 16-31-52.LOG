@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=P14 Pin=NRF24L01-1
+Removed Pin From Net: NetName=P13 Pin=NRF24L01-2
+Removed Pin From Net: NetName=P12 Pin=NRF24L01-3
+Removed Pin From Net: NetName=P10 Pin=NRF24L01-4
+Removed Pin From Net: NetName=P11 Pin=NRF24L01-5
+Removed Pin From Net: NetName=P7 Pin=NRF24L01-6
+Added Pin To Net: NetName=PA8 Pin=NRF24L01-1
+Added Pin To Net: NetName=PA4 Pin=NRF24L01-2
+Added Pin To Net: NetName=PB3 Pin=NRF24L01-3
+Added Pin To Net: NetName=PA7 Pin=NRF24L01-4
+Added Pin To Net: NetName=PA6 Pin=NRF24L01-5
+Added Pin To Net: NetName=PC12 Pin=NRF24L01-6

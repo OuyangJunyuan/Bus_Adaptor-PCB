@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=232RX Pin=P1-7
+Removed Pin From Net: NetName=232TX Pin=P1-9
+Added Pin To Net: NetName=232TX Pin=P1-8
+Added Pin To Net: NetName=232RX Pin=P1-10

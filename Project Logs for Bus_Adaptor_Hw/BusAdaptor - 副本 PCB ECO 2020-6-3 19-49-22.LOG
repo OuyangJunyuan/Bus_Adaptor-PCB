@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=SWCLK Pin=P1-52
+Added Pin To Net: NetName=SWCLK Pin=P1-49
