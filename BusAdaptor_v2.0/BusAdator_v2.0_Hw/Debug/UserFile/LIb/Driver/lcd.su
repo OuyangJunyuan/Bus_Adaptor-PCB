@@ -1,0 +1,8 @@
+lcd.c:38:6:LCD_WR_DATA8	16	static
+lcd.c:47:6:LCD_WR_DATA16	24	static
+lcd.c:62:6:LCD_WR_REG	16	static
+lcd.c:72:6:LCD_Address_Set	24	static
+lcd.c:97:6:Lcd_Init	8	static
+lcd.c:205:6:LCD_Clear	24	static
+lcd.c:218:6:LCD_DrawPoint	16	static
+lcd.c:229:6:LCD_Fill	32	static

@@ -1,0 +1,4 @@
+decode.c:5:6:CanDataDecoder	16	static
+decode.c:45:6:CanDataPreDecode	32	static
+decode.c:63:6:updateMotor	16	static
+decode.c:122:6:rosCommondDecoder	32	static

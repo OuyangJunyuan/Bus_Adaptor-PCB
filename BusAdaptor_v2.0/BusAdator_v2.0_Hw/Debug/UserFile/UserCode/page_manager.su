@@ -1,0 +1,12 @@
+lv_obj_style_dec.h:167:1:lv_obj_set_style_local_text_font	24	static
+lv_disp.h:153:26:lv_scr_act	8	static
+lv_cont.h:169:20:lv_cont_set_fit	24	static
+page_manager.c:48:13:AppWindow_CreatBg	4	static
+page_manager.c:56:13:AppWindow_BarCrt	16	static
+page_manager.c:76:6:PageRegister	24	static
+page_manager.c:84:9:StatusBar_GetHeight	4	static
+page_manager.c:85:11:AppWindow_GetCont	16	static
+page_manager.c:86:12:AppWindow_GetHeight	16	static
+page_manager.c:87:12:AppWindow_GetWidth	8	static
+page_manager.c:99:6:AppWindows_running	8	static
+page_manager.c:107:6:AppWindows_init	40	static

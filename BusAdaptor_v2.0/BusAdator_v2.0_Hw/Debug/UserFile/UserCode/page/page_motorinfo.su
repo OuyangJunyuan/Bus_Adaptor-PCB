@@ -1,0 +1,8 @@
+page_motorinfo.c:29:13:gui_creat	32	static
+page_motorinfo.c:39:13:update_motor_info_gui	16	static
+page_motorinfo.c:70:13:loop	4	static
+page_motorinfo.c:73:13:init	8	static
+page_motorinfo.c:77:13:Setup	8	static
+page_motorinfo.c:81:13:Exit	4	static
+page_motorinfo.c:88:13:Event	16	static
+page_motorinfo.c:92:6:PageRegister_motor_info	24	static

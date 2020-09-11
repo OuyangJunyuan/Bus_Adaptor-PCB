@@ -1,0 +1,5 @@
+page_cpuinfo.c:14:13:init	4	static
+page_cpuinfo.c:18:13:Setup	8	static
+page_cpuinfo.c:21:13:Exit	4	static
+page_cpuinfo.c:29:13:Event	16	static
+page_cpuinfo.c:33:6:PageRegister_cpu_info	24	static

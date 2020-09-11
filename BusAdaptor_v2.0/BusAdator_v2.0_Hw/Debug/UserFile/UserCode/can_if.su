@@ -1,0 +1,4 @@
+can_if.c:18:19:Can_Init_User	48	static
+can_if.c:50:6:canTransmit	16	static
+can_if.c:59:6:HAL_CAN_RxFifo0MsgPendingCallback	56	static,ignoring_inline_asm
+can_if.c:78:6:HAL_CAN_RxFifo1MsgPendingCallback	56	static,ignoring_inline_asm

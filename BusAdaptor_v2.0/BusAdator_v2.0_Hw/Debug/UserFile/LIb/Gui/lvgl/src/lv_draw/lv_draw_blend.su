@@ -1,0 +1,15 @@
+lv_color.h:454:48:lv_color_mix	24	static
+lv_color.h:474:42:lv_color_premult	16	static
+lv_color.h:500:48:lv_color_mix_premult	24	static
+lv_area.h:110:26:lv_area_get_width	16	static
+lv_area.h:120:26:lv_area_get_height	16	static
+lv_draw_blend.c:128:28:_lv_blend_fill	80	static
+lv_draw_blend.c:194:28:_lv_blend_map	88	static
+lv_draw_blend.c:251:13:fill_set_px	80	static
+lv_draw_blend.c:305:35:fill_normal	104	static
+lv_draw_blend.c:541:13:fill_blended	72	static
+lv_draw_blend.c:619:13:map_set_px	88	static
+lv_draw_blend.c:683:35:map_normal	80	static
+lv_draw_blend.c:858:13:map_blended	72	static
+lv_draw_blend.c:931:26:color_blend_true_color_additive	24	static
+lv_draw_blend.c:982:26:color_blend_true_color_subtractive	24	static

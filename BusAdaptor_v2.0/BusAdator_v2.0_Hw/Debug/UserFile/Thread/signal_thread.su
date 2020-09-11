@@ -1,0 +1,4 @@
+signal_thread.c:26:6:signal_thread_creat	24	static
+signal_thread.c:61:13:signal_thread	24	static
+signal_thread.c:90:13:can_process_packet_thread	24	static
+signal_thread.c:103:13:usb_process_packet_thread	24	static

@@ -1,0 +1,5 @@
+algorithm.c:11:6:controllerInit	24	static
+algorithm.c:46:6:PID_Calc	16	static
+algorithm.c:59:6:speedServoRun	16	static
+algorithm.c:64:6:positionServoRun	16	static
+algorithm.c:74:6:CanTransmit_motor	16	static
