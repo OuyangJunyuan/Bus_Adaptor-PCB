@@ -44,7 +44,7 @@ UserFile/UserCode/decode.o: ../UserFile/UserCode/decode.c \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
- /home/ou/workspace/stm32_ws/BusAdator_Hw/UserFile/UserCode/ringbuf.h
+ /home/ou/workspace/stm32_ws/BusAdaptor/BusAdaptor_v2.0/BusAdator_v2.0_Hw/UserFile/UserCode/ringbuf.h
 
 ../UserFile/UserCode/decode.h:
 
@@ -144,4 +144,4 @@ UserFile/UserCode/decode.o: ../UserFile/UserCode/decode.c \
 
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:
 
-/home/ou/workspace/stm32_ws/BusAdator_Hw/UserFile/UserCode/ringbuf.h:
+/home/ou/workspace/stm32_ws/BusAdaptor/BusAdaptor_v2.0/BusAdator_v2.0_Hw/UserFile/UserCode/ringbuf.h:

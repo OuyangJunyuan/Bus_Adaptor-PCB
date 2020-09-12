@@ -1,4 +1,3 @@
-gui_thread.c:21:6:cpu_info_send2usb	520	static
-gui_thread.c:43:6:gui_thread_creat	24	static
-gui_thread.c:70:13:gui_thread	24	static
-gui_thread.c:87:13:gui_tick_thread	16	static
+gui_thread.c:31:6:gui_thread_creat	24	static
+gui_thread.c:60:13:gui_thread	24	static
+gui_thread.c:80:13:gui_tick_thread	16	static

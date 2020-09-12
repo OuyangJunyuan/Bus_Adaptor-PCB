@@ -68,8 +68,8 @@ BusAdator_Hw.bin \
 all: BusAdator_Hw.elf secondary-outputs
 
 # Tool invocations
-BusAdator_Hw.elf: $(OBJS) $(USER_OBJS) /home/ou/workspace/stm32_ws/BusAdator_Hw/STM32F765VGHX_FLASH.ld
-	arm-none-eabi-gcc -o "BusAdator_Hw.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/home/ou/workspace/stm32_ws/BusAdator_Hw/STM32F765VGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BusAdator_Hw.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+BusAdator_Hw.elf: $(OBJS) $(USER_OBJS) /home/ou/workspace/stm32_ws/BusAdaptor/BusAdaptor_v2.0/BusAdator_v2.0_Hw/STM32F765VGHX_FLASH.ld
+	arm-none-eabi-gcc -o "BusAdator_Hw.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/home/ou/workspace/stm32_ws/BusAdaptor/BusAdaptor_v2.0/BusAdator_v2.0_Hw/STM32F765VGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BusAdator_Hw.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

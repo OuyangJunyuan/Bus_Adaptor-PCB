@@ -45,7 +45,7 @@ USB_DEVICE/App/usb_device.o: ../USB_DEVICE/App/usb_device.c \
  ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
  ../USB_DEVICE/App/usbd_cdc_if.h \
- /home/ou/workspace/stm32_ws/BusAdator_Hw/UserFile/UserCode/ringbuf.h
+ /home/ou/workspace/stm32_ws/BusAdaptor/BusAdaptor_v2.0/BusAdator_v2.0_Hw/UserFile/UserCode/ringbuf.h
 
 ../USB_DEVICE/App/usb_device.h:
 
@@ -141,4 +141,4 @@ USB_DEVICE/App/usb_device.o: ../USB_DEVICE/App/usb_device.c \
 
 ../USB_DEVICE/App/usbd_cdc_if.h:
 
-/home/ou/workspace/stm32_ws/BusAdator_Hw/UserFile/UserCode/ringbuf.h:
+/home/ou/workspace/stm32_ws/BusAdaptor/BusAdaptor_v2.0/BusAdator_v2.0_Hw/UserFile/UserCode/ringbuf.h:

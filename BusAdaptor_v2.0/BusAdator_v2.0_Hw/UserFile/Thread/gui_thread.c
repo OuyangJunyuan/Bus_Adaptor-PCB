@@ -2,6 +2,7 @@
 
 /* ---- 包含HAL.h ---- */
 #include "usbd_cdc_if.h"
+#include "tim.h"
 /* ---- 包含ROTS.h ---- */
 #include "FreeRTOS.h"
 #include "task.h"
@@ -18,19 +19,6 @@ uint32_t cntst;
 
 
 
-void cpu_info_send2usb(void)
-{
-	uint8_t cpu_info[CDC_DATA_HS_MAX_PACKET_SIZE];
-	vTaskList((char *)&cpu_info);
-	usb_printf("---------------------------------------------\r\n");
-	usb_printf("任务名 任务状态 优先级 剩余栈 任务序号\r\n");
-	usb_printf("%s", cpu_info);
-	memset(cpu_info,0,CDC_DATA_HS_MAX_PACKET_SIZE); //信息缓冲区清零
-	vTaskGetRunTimeStats((char *)&cpu_info);
-	usb_printf("任务名 运行计数 使用率\r\n");
-	usb_printf("%s", cpu_info);
-	usb_printf("---------------------------------------------\r\n\n");
-}
 
 
 
@@ -41,10 +29,12 @@ static TaskHandle_t gui_thread_Handle, gui_tick_thread_Handle;
 static void gui_thread(void *argument);
 static void gui_tick_thread(void *argument);
 void gui_thread_creat(void) {
-	AppWindows_init();
+	AppWindows_Init();
+	AppWindows_ChangeTo(0);
+	HAL_TIM_Base_Start_IT(&htim6);
 	BaseType_t xReturn = pdPASS;
 	xReturn = xTaskCreate((TaskFunction_t) gui_tick_thread,
-			(const char*) "gui_tick_thread", (uint16_t) 2048, (void*) NULL,
+			(const char*) "ticks", (uint16_t) 2048, (void*) NULL,
 			(UBaseType_t) 1,
 			(TaskHandle_t*) &gui_tick_thread_Handle);
 	if (xReturn == pdPASS)
@@ -54,7 +44,7 @@ void gui_thread_creat(void) {
 			;
 
 	xReturn = xTaskCreate((TaskFunction_t) gui_thread,
-			(const char*) "gui_thread", (uint16_t) 2048, (void*) NULL,
+			(const char*) "gui", (uint16_t) 2048, (void*) NULL,
 			(UBaseType_t) 2,
 			(TaskHandle_t*) &gui_thread_Handle);
 	if (xReturn == pdPASS)
@@ -73,15 +63,18 @@ static void gui_thread(void *argument) {
 	uint32_t cnt = 0;
 	/* ---- 线程初始化 ---- */
 	for (;;) {
-		vTaskDelay(10);
+		vTaskDelay(30);
 		cnt++;
-		if (cnt == 50) {
+		if ((cnt%50)==0){
 			HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_11);
-			cnt = 0;
 		}
-		AppWindows_running();
-//    lv_label_set_text(labelwifi, MY_SYMBOL_WIFI_3);]
-		//cpu_info_send2usb();
+		if((cnt<300))
+			AppWindows_ChangeTo(0);
+		else if(cnt >300)
+			AppWindows_ChangeTo(1);
+		if(cnt==600)
+			cnt=0;
+		AppWindows_Running();
 	}
 }
 static void gui_tick_thread(void *argument) {

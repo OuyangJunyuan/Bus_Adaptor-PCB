@@ -25,16 +25,21 @@ LV_FONT_DECLARE(LV_MY_FONT_8);
 #define MY_SYMBOL_WIFI_2 "\xEF\x9A\xAB"
 #define MY_SYMBOL_WIFI_1 "\xEF\x9A\xAA"
 #define MY_SYMBOL_WIFI_0 "\xEF\x9A\xAC"
-
+int16_t offset[]={
+		-40,	-22,	40,		-22,
+		-40,	-7,		40,		-7,
+		-40,	8,		40,		8,
+		-40,	23,		40,		23,};
 static void gui_creat(lv_obj_t *par) {
 	for (int i = 0; i < 8; i++) {
 		barmotor[i] = lv_bar_create(par, NULL);
 		lv_obj_set_size(barmotor[i], 70, 10);
-		lv_obj_align(barmotor[i], NULL, LV_ALIGN_CENTER, 0, -50 + i * 15);
-		//lv_bar_set_anim_time(barmotor[i], 2000);
+		lv_obj_align(barmotor[i], NULL, LV_ALIGN_CENTER,offset[2*i],offset[2*i+1]);
+		lv_bar_set_anim_time(barmotor[i], 300);
 		lv_bar_set_value(barmotor[i], 100, LV_ANIM_ON);
 		lv_obj_set_state(barmotor[i], LV_STATE_DISABLED);
 	}
+
 }
 static void update_motor_info_gui() {
 	for (int i = 0; i < 8; i++) {
@@ -67,8 +72,7 @@ static void update_motor_info_gui() {
 
 
 
-static void loop(void) {
-}
+
 
 static void init(void) {
 	gui_creat(appWindow);
@@ -76,7 +80,6 @@ static void init(void) {
 
 static void Setup(void) {
 	lv_obj_move_foreground(appWindow);
-	update_motor_info_gui();
 }
 static void Exit(void) {
 //    LV_OBJ_ADD_ANIM(contICON, x, lv_obj_get_width(contDisp) + ICON_Size, LV_ANIM_TIME_DEFAULT);
@@ -88,7 +91,9 @@ static void Exit(void) {
 static void Event(int event, void *btn) {
 
 }
-
+static void loop(void) {
+	update_motor_info_gui();
+}
 void PageRegister_motor_info(uint8_t pageID) {
 	appWindow = AppWindow_GetCont(pageID);
 	PageRegister(pageID, init, Setup, loop, Exit, Event);

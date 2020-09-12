@@ -4,7 +4,7 @@
 #include "spi.h"
 
 
-#define USE_HORIZONTAL 0  
+#define USE_HORIZONTAL 2
 
 #if USE_HORIZONTAL==0||USE_HORIZONTAL==1
 #define LCD_W 80

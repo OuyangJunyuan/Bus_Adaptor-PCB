@@ -1,5 +1,10 @@
-page_cpuinfo.c:14:13:init	4	static
-page_cpuinfo.c:18:13:Setup	8	static
-page_cpuinfo.c:21:13:Exit	4	static
-page_cpuinfo.c:29:13:Event	16	static
-page_cpuinfo.c:33:6:PageRegister_cpu_info	24	static
+lv_obj_style_dec.h:167:1:lv_obj_set_style_local_text_font	24	static
+page_cpuinfo.c:25:6:process_info	24	static
+page_cpuinfo.c:35:6:print_cpu_info	8	static
+page_cpuinfo.c:55:13:gui_creat	24	static
+page_cpuinfo.c:63:13:init	8	static
+page_cpuinfo.c:68:13:Setup	8	static
+page_cpuinfo.c:72:13:Exit	4	static
+page_cpuinfo.c:76:13:Event	16	static
+page_cpuinfo.c:79:13:loop	8	static
+page_cpuinfo.c:82:6:PageRegister_cpu_info	24	static

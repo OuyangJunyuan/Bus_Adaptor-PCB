@@ -19,6 +19,4 @@
 
 #define PAGE_INIT() do{PAGE(0);PAGE(1);}while(0)
 
-
-
 #endif /* PAGE_MANAGER_CONFIG_H_ */

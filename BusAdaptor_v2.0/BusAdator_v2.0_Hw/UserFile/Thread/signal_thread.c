@@ -26,7 +26,7 @@ static void usb_process_packet_thread(void *argument);
 void signal_thread_creat(void) {
 	BaseType_t xReturn = pdPASS;
 	xReturn = xTaskCreate((TaskFunction_t) signal_thread,
-			(const char*) "signal_thread", (uint16_t) 1024, (void*) NULL,
+			(const char*) "signal", (uint16_t) 1024, (void*) NULL,
 			(UBaseType_t) 5,
 			(TaskHandle_t*) &signal_thread_Handle);
 	if (xReturn == pdPASS)
@@ -36,7 +36,7 @@ void signal_thread_creat(void) {
 			;
 
 	xReturn = xTaskCreate((TaskFunction_t) can_process_packet_thread,
-			(const char*) "can_process_packet_thread", (uint16_t) 1024,
+			(const char*) "can", (uint16_t) 1024,
 			(void*) NULL, (UBaseType_t) 4, //Priority
 			(TaskHandle_t*) &can_process_packet_thread_Handle);
 	if (xReturn == pdPASS)
@@ -46,7 +46,7 @@ void signal_thread_creat(void) {
 			;
 
 	xReturn = xTaskCreate((TaskFunction_t) usb_process_packet_thread,
-			(const char*) "usb_process_packet_thread", (uint16_t) 1024,
+			(const char*) "usb", (uint16_t) 1024,
 			(void*) NULL, (UBaseType_t) 3, //Priority
 			(TaskHandle_t*) &usb_process_packet_thread_Handle);
 	if (xReturn == pdPASS)
