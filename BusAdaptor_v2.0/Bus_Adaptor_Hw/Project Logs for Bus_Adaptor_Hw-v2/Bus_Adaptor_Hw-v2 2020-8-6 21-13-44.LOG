@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=LCD_P1 Pin=H1-1
+Removed Pin From Net: NetName=GND Pin=H1-2
+Removed Pin From Net: NetName=LCD_P2 Pin=H1-3
+Removed Pin From Net: NetName=LCD_P3 Pin=H1-4
+Removed Pin From Net: NetName=SPI4_MOSI Pin=H1-5
+Removed Pin From Net: NetName=SPI4_SCK Pin=H1-6
+Removed Pin From Net: NetName=3.3V Pin=H1-7
+Removed Pin From Net: NetName=LCD_P4 Pin=H1-8
+Added Pin To Net: NetName=LCD_P4 Pin=H1-1
+Added Pin To Net: NetName=3.3V Pin=H1-2
+Added Pin To Net: NetName=SPI4_SCK Pin=H1-3
+Added Pin To Net: NetName=SPI4_MOSI Pin=H1-4
+Added Pin To Net: NetName=LCD_P3 Pin=H1-5
+Added Pin To Net: NetName=LCD_P2 Pin=H1-6
+Added Pin To Net: NetName=GND Pin=H1-7
+Added Pin To Net: NetName=LCD_P1 Pin=H1-8

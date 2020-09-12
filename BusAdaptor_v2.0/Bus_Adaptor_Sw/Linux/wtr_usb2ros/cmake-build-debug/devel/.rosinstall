@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ou/workspace/ros_ws/src/wtr_usb2ros/cmake-build-debug/devel/setup.sh

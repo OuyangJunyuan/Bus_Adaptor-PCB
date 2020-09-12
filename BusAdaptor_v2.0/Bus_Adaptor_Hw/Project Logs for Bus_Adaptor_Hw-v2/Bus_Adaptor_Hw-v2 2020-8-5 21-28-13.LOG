@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=D3 Old Footprint=SMB New Footprint=SMA
+Change Component Footprint: Designator=D? Old Footprint=SMB New Footprint=SMA
+Change Component Designator: OldDesignator=D? NewDesignator=D1
+Added Member To Class: ClassName=Bus_Adaptor_Hw-v2 Member=Component D1 SMBJ3.3/MSP3V3HM3/89A-C241899
+Added Member To Class: ClassName=Bus_Adaptor_Hw-v2 Member=Component F1 500mA

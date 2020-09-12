@@ -1,0 +1,8 @@
+prefix=/home/ou/workspace/ros_ws/src/wtr_usb2ros/cmake-build-debug/devel
+
+Name: wtr_usb2ros
+Description: Description of wtr_usb2ros
+Version: 0.0.0
+Cflags: -I/home/ou/workspace/ros_ws/src/wtr_usb2ros/cmake-build-debug/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

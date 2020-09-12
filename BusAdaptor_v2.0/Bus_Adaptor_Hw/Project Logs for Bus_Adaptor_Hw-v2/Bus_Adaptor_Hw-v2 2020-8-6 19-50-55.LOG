@@ -1,0 +1,21 @@
+Added Component: Designator=H1(FPC-SMD_8P-P0.50_F0500WR-S-08PNLNG1GT0R)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=H1-2
+Added Pin To Net: NetName=SPI4_MOSI Pin=H1-5
+Added Pin To Net: NetName=SPI4_SCK Pin=H1-6
+Added Pin To Net: NetName=3.3V Pin=H1-7
+Added Pin To Net: NetName=GND Pin=H1-9
+Added Pin To Net: NetName=GND Pin=H1-10
+Added Pin To Net: NetName=LCD_P1 Pin=H1-1
+Added Pin To Net: NetName=LCD_P1 Pin=U1-D4
+Added Net: Name=LCD_P1
+Added Pin To Net: NetName=LCD_P2 Pin=H1-3
+Added Pin To Net: NetName=LCD_P2 Pin=U1-C4
+Added Net: Name=LCD_P2
+Added Pin To Net: NetName=LCD_P3 Pin=H1-4
+Added Pin To Net: NetName=LCD_P3 Pin=U1-B3
+Added Net: Name=LCD_P3
+Added Pin To Net: NetName=LCD_P4 Pin=H1-8
+Added Pin To Net: NetName=LCD_P4 Pin=U1-A2
+Added Net: Name=LCD_P4
+Added Member To Class: ClassName=Bus_Adaptor_Hw-v2 Member=Component H1 8P-2EP

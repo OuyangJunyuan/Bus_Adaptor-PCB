@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libgmock_main.so -o libgmock_main.so CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o CMakeFiles/gmock_main.dir/src/gmock-all.cc.o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o   -L/home/ou/workspace/ros_ws/src/wtr_usb2ros/lib  -Wl,-rpath,/home/ou/workspace/ros_ws/src/wtr_usb2ros/lib -lusb-1.0 -lpthread 
